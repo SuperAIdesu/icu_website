@@ -25,13 +25,13 @@ function createControls() {
   document.body.appendChild(nightModeButton);
 }
 
-function doThatFuckingColorThing() {
-  var color = "hsl(" + currentHue + ", 80%, 60%)",
-    nextHue = currentHue + hueAddition;
-  currentHue = nextHue > 360 ? 0 : nextHue;
-  r.style.color = color;
-  setTimeout(doThatFuckingColorThing, rainbowTiming);
-}
+// function doThatFuckingColorThing() {
+//   var color = "hsl(" + currentHue + ", 80%, 60%)",
+//     nextHue = currentHue + hueAddition;
+//   currentHue = nextHue > 360 ? 0 : nextHue;
+//   r.style.color = color;
+//   setTimeout(doThatFuckingColorThing, rainbowTiming);
+// }
 
 function someControl(id, textArr, className) {
   /* You see? No fucking jQuery needed, check:
@@ -66,6 +66,6 @@ function addInvertedControl() {
 }
 
 createControls();
-doThatFuckingColorThing();
+// doThatFuckingColorThing();
 addContrastControl();
 addInvertedControl();
